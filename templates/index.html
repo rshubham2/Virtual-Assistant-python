@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Virtual Assistant</h1>
+        <div id="chat-display"></div>
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type your command...">
+            <button id="send-button">Send</button>
+        </div>
+        <div class="control-buttons">
+            <button id="listen-button">Listen</button>
+            <button id="stop-button">Stop</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
